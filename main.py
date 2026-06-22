@@ -10,7 +10,7 @@ print("    ✦ 4. Delete Contact")
 print("    ✦ 5. Quit")
 print("")
 
-choice = int(input("Enter any choice from Menu: "))
+choice = input("Enter any choice from Menu: ")
 
 while True:
     
@@ -28,7 +28,7 @@ while True:
         print("    ✦ 5. Quit")
         print("")
         
-        choice = int(input("Enter any choice from Menu: "))
+        choice = input("Enter any choice from Menu: ")
     
     elif choice == 2:
         search_name = input("Enter Contact name to Search: ")
@@ -50,7 +50,7 @@ while True:
         print("    ✦ 5. Quit")
         print("")
         
-        choice = int(input("Enter any choice from Menu: "))
+        choice = input("Enter any choice from Menu: ")
 
     elif choice ==3:
         print("")
@@ -95,7 +95,7 @@ while True:
         print("    ✦ 5. Quit")
         print("")
         
-        choice = int(input("Enter any choice from Menu: "))
+        choice = input("Enter any choice from Menu: ")
 
 
     elif choice == 4:
@@ -118,7 +118,7 @@ while True:
         print("    ✦ 5. Quit")
         print("")
         
-        choice = int(input("Enter any choice from Menu: "))
+        choice = input("Enter any choice from Menu: ")
     
     elif choice == 5:
         print("!QUIT! Thank you for using Contact Manager.")
@@ -126,3 +126,7 @@ while True:
 
     else:
         print("Invaid choice please pick a number from 1 to 5!")
+        break
+
+else:
+    print("Invalid Input!")
