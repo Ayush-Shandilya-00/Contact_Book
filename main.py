@@ -1,36 +1,36 @@
 # This is a Project potray Contact_Book based on CRUD(Create,Read,Update,Delete)
 
 Contact_Book ={}
-print("─── ✧ CONTACT MANAGER ✧ ───")
-print("")
-print("    ✦ 1. Add Contact")
-print("    ✦ 2. Search Contact")
-print("    ✦ 3. Update Contact")
-print("    ✦ 4. Delete Contact")
-print("    ✦ 5. Quit")
-print("")
+
+def menu():
+    print("")
+    print("─── ✧ CONTACT MANAGER ✧ ───")
+    print("")
+    print("    ✦ 1. Add Contact")
+    print("    ✦ 2. Search Contact")
+    print("    ✦ 3. Update Contact")
+    print("    ✦ 4. Delete Contact")
+    print("    ✦ 5. Quit")
+    print("")
+    return
+
+menu()
+
 
 choice = input("Enter any choice from Menu: ")
 
 while True:
     
-    if choice == 1:
+    if choice == "1":
         add = str(input("Enter Contact Name: "))
         add1 = int(input("Enter Contact Number: "))
         Contact_Book[add]= add1
 
-        print("─── ✧ CONTACT MANAGER ✧ ───")
-        print("")
-        print("    ✦ 1. Add Contact")
-        print("    ✦ 2. Search Contact")
-        print("    ✦ 3. Update Contact")
-        print("    ✦ 4. Delete Contact")
-        print("    ✦ 5. Quit")
-        print("")
+        menu()
         
         choice = input("Enter any choice from Menu: ")
     
-    elif choice == 2:
+    elif choice == "2":
         search_name = input("Enter Contact name to Search: ")
 
         if search_name in Contact_Book:
@@ -41,18 +41,11 @@ while True:
             print("Contact Not Found!")
 
             
-        print("─── ✧ CONTACT MANAGER ✧ ───")
-        print("")
-        print("    ✦ 1. Add Contact")
-        print("    ✦ 2. Search Contact")
-        print("    ✦ 3. Update Contact")
-        print("    ✦ 4. Delete Contact")
-        print("    ✦ 5. Quit")
-        print("")
+        menu()
         
         choice = input("Enter any choice from Menu: ")
 
-    elif choice ==3:
+    elif choice =="3":
         print("")
         print("──┤ MENU FOR Update IN CONTACT BOOK ├──")
         print("")
@@ -86,19 +79,12 @@ while True:
             print(" Invalid Choice inside Update Menu!")
 
 
-        print("─── ✧ CONTACT MANAGER ✧ ───")
-        print("")
-        print("    ✦ 1. Add Contact")
-        print("    ✦ 2. Search Contact")
-        print("    ✦ 3. Update Contact")
-        print("    ✦ 4. Delete Contact")
-        print("    ✦ 5. Quit")
-        print("")
+        menu()
         
         choice = input("Enter any choice from Menu: ")
 
 
-    elif choice == 4:
+    elif choice == "4":
         remove_contact= input("Enter Name of the Contact to Remove: ")
 
         if remove_contact in Contact_Book:
@@ -109,18 +95,11 @@ while True:
             print("Invalid")
     
         
-        print("─── ✧ CONTACT MANAGER ✧ ───")
-        print("")
-        print("    ✦ 1. Add Contact")
-        print("    ✦ 2. Search Contact")
-        print("    ✦ 3. Update Contact")
-        print("    ✦ 4. Delete Contact")
-        print("    ✦ 5. Quit")
-        print("")
+        menu()
         
         choice = input("Enter any choice from Menu: ")
     
-    elif choice == 5:
+    elif choice == "5":
         print("!QUIT! Thank you for using Contact Manager.")
         break
 
