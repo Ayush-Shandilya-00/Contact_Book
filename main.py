@@ -92,7 +92,7 @@ while True:
             print("Contact Deleted Successfully!") 
 
         else:
-            print("Invalid")
+            print("Contact Name Not Found!")
     
         
         menu()
