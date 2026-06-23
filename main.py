@@ -100,7 +100,7 @@ while True:
         choice = input("Enter any choice from Menu: ")
     
     elif choice == "5":
-        print("!QUIT! Thank you for using Contact Manager.")
+        print("Thank you for using Contact Manager.")
         break
 
     else:
