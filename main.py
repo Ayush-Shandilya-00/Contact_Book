@@ -92,17 +92,18 @@ while True:                                                    # While loop open
             print("Contact Deleted Successfully!") 
 
         else:
-            print("Invalid")
+            print("Contact Name Not Found!")
     
         
         menu()
         
         choice = input("Enter any choice from Menu: ")
     
-    elif choice == "5":                                                    # Operations is users choose "5"
-        print("!QUIT! Thank you for using Contact Manager.")
-        break
 
+    elif choice == "5":                                           # Operations is users choose "5"
+        print("Thank you for using Contact Manager.")
+        break
+    
     else:
         print("Invaid choice please pick a number from 1 to 5!")
         break
