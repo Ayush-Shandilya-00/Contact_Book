@@ -1,8 +1,8 @@
 # This is a Project potray Contact_Book based on CRUD(Create,Read,Update,Delete)
 
-Contact_Book ={}
+Contact_Book ={} #Empty Dict for Storing Contact info
 
-def menu():
+def menu():                                   # Functin to Show users Choice
     print("")
     print("─── ✧ CONTACT MANAGER ✧ ───")
     print("")
@@ -17,11 +17,11 @@ def menu():
 menu()
 
 
-choice = input("Enter any choice from Menu: ")
+choice = input("Enter any choice from Menu: ")                 # Input choice to do operations
 
-while True:
+while True:                                                    # While loop opens
     
-    if choice == "1":
+    if choice == "1":                                          # Operations is users choose "1"
         add = str(input("Enter Contact Name: "))
         add1 = int(input("Enter Contact Number: "))
         Contact_Book[add]= add1
@@ -30,7 +30,7 @@ while True:
         
         choice = input("Enter any choice from Menu: ")
     
-    elif choice == "2":
+    elif choice == "2":                                        # Operations is users choose "2"
         search_name = input("Enter Contact name to Search: ")
 
         if search_name in Contact_Book:
@@ -45,8 +45,8 @@ while True:
         
         choice = input("Enter any choice from Menu: ")
 
-    elif choice =="3":
-        print("")
+    elif choice =="3":                                          # Operations is users choose "3"
+        print("")                                            
         print("──┤ MENU FOR Update IN CONTACT BOOK ├──")
         print("")
         print("  1) Updating Name of Contact")
@@ -84,7 +84,7 @@ while True:
         choice = input("Enter any choice from Menu: ")
 
 
-    elif choice == "4":
+    elif choice == "4":                                                     # Operations is users choose "4"
         remove_contact= input("Enter Name of the Contact to Remove: ")
 
         if remove_contact in Contact_Book:
@@ -99,7 +99,7 @@ while True:
         
         choice = input("Enter any choice from Menu: ")
     
-    elif choice == "5":
+    elif choice == "5":                                                    # Operations is users choose "5"
         print("!QUIT! Thank you for using Contact Manager.")
         break
 
@@ -108,5 +108,7 @@ while True:
         break
 
 else:
-    print("Invalid Input!")
+    print("Invalid Input!")                                                # While loop ends
+
+
 
