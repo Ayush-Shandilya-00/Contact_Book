@@ -12,7 +12,7 @@ A simple, interactive terminal-based contact book application built using Python
 2. Open your terminal in VS Code.
 3. Run the following command:
    ```bash
-   python main.py
+   python Contact_Book_main.py
    ```
 
 ## 🛠️ Technologies Used
